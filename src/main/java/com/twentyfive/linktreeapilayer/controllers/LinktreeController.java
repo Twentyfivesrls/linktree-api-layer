@@ -17,7 +17,8 @@ public class LinktreeController {
     private  InternalLinktreeController linktreeController;
 
 
-    private AuthenticationService authenticationService = new AuthenticationService();
+    @Autowired
+    private AuthenticationService authenticationService;
 
     @PostMapping("/add")
     public ResponseEntity<Object> add(@RequestBody LinkTree linkTree, String username) {
