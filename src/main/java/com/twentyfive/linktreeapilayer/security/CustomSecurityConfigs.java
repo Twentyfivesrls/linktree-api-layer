@@ -11,7 +11,7 @@ import org.springframework.web.cors.CorsConfiguration;
 @EnableWebSecurity
 public class CustomSecurityConfigs {
 
-    @Bean
+
     public SecurityFilterChain configure(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests((authorize) -> authorize.anyRequest().permitAll())
                 .csrf((csrf) -> csrf.ignoringRequestMatchers("/**"))

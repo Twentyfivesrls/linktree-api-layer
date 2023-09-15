@@ -19,6 +19,9 @@ public interface InternalLinktreeController {
     @RequestMapping(method = RequestMethod.GET, value="/linkTree/findByUsername")
     UserLink getByUsername(@RequestParam("username") String username);
 
+    @RequestMapping(method = RequestMethod.GET, value="/linkTree/findByUsername")
+    UserLink getByUser(@RequestParam("username") String username);
+
     @RequestMapping(method = RequestMethod.PUT, value="/linkTree/update")
     UserLink update(@RequestParam("id") String id,@RequestParam("username") String username, @RequestBody LinkTree linkTree);
 
