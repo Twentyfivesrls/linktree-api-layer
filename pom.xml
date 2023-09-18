@@ -11,7 +11,7 @@
     <groupId>com.twentyfive</groupId>
     <artifactId>linktree-api-layer</artifactId>
     <version>0.0.4</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <distributionManagement>
         <repository>
             <id>github</id>
@@ -67,6 +67,7 @@
     </dependencies>
 
     <build>
+        <finalName>linktree-api-layer</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

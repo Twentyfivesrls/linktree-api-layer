@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "InternalLinktreeController", url = "http://192.168.1.58:8080")
+@FeignClient(name = "InternalLinktreeController", url = "http://80.211.123.167:8899/twentyfive-db/")
 public interface InternalLinktreeController {
 
     @RequestMapping(method = RequestMethod.POST, value="/linkTree/add")
