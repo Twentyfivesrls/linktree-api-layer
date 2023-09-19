@@ -71,4 +71,9 @@ public class LinktreeController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
     }
+
+    @RequestMapping("/test")
+    public ResponseEntity<String> hello() {
+        return ResponseEntity.ok().body("Hello from private resource");
+    }
 }
