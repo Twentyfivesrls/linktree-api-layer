@@ -2,8 +2,8 @@ package com.twentyfive.linktreeapilayer.controllers;
 
 import com.twentyfive.authorizationcontroller.services.AuthenticationService;
 import com.twentyfive.linktreeapilayer.clients.InternalLinktreeController;
-import com.twentyfive.twentyfivemodel.models.LinkTree;
-import com.twentyfive.twentyfivemodel.models.UserLink;
+import com.twentyfive.twentyfivemodel.models.linktreeModels.LinkTree;
+import com.twentyfive.twentyfivemodel.models.linktreeModels.UserLink;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -55,4 +55,5 @@ public class LinktreeController {
     public ResponseEntity<String> hello() {
         return ResponseEntity.ok().body("Hello from private resource");
     }
+
 }

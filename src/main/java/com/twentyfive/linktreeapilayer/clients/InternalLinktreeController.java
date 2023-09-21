@@ -1,8 +1,8 @@
 package com.twentyfive.linktreeapilayer.clients;
 
-import com.twentyfive.twentyfivemodel.models.LinkTree;
-import com.twentyfive.twentyfivemodel.models.UserLink;
 
+import com.twentyfive.twentyfivemodel.models.linktreeModels.LinkTree;
+import com.twentyfive.twentyfivemodel.models.linktreeModels.UserLink;
 import org.springframework.cloud.openfeign.FeignClient;
 
 import org.springframework.web.bind.annotation.RequestBody;
